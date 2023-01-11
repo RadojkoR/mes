@@ -1,10 +1,10 @@
 $("document").ready(function () {
 $(window).scroll(function(){
     if($(window).scrollTop()){
-        $("nav").addClass("white");
+        $("#mainNav").addClass("white");
     }
     else {
-        $("nav").removeClass("white");
+        $("#mainNav").removeClass("white");
     } 
 
 });//END SCROLL TOP
@@ -40,7 +40,7 @@ $(window).on("scroll", function () {
 
     if ($(window).scrollTop() > 450) {
         $(".textH").animate({
-            top: "-10%",
+            top: "0%",
             right: "0%",
             opacity: '1'
         }, 1000);
@@ -81,7 +81,7 @@ $(window).on("scroll", function () {
 
     if($(window).scrollTop() > 600) {
         $("p.para1").animate({
-            top: "-10%",
+            top: "0%",
             left: "0%", 
             color: "#000",
             opacity: "1"
@@ -137,17 +137,17 @@ $(window).scroll(function () {
 
 });//END BACKGROUND IMG SCROLL
     
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 1500) {
-        $("div.uslugeAccordion").addClass("gray");
-    }//END CSS GRAY
+//   $(window).scroll(function() {
+//     if ($(window).scrollTop() > 1500) {
+//         $("div.uslugeAccordion").addClass("gray");
+//     }//END CSS GRAY
 
 
-    if ($(window).scrollTop() > 1500) {
-        $("div.bgBlue").addClass("blue");
-    }//END CSS BLUE
+//     if ($(window).scrollTop() > 1500) {
+//         $("div.bgBlue").addClass("blue");
+//     }//END CSS BLUE
 
-});//END SCROLL HR
+// });//END SCROLL HR
 
 // UPDATE COPYRIGHT YEAR
     

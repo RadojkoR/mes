@@ -30,12 +30,17 @@ p {
     line-height: 150%;
 }
 
-
-
-
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1300px;
+    outline: 2px solid red;
+    position: relative;
+}
 /*LAYUOT
 ***********************************************************/
 #mainNav {
+    width: 100%;
     height: 100px;
     text-align: right;
     position: fixed;
@@ -95,13 +100,6 @@ nav ul {
     z-index: 1;
 }
 
-/* #mainHeader img {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -100;
-} */
-
 #mainHeader h1 {
     font-size: 10em;
     color: #FFF;
@@ -116,19 +114,21 @@ nav ul {
     padding: 1% 0 0 20%;
 }
 
-nav.white ul {
+#mainNav.white
+ {
+    width: 100%;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.849);
     z-index: 101;
 }
 
-nav.white ul li a {
+#mainNav.white ul li a {
     color: #000 !important;
     font-weight: 900;
 
 }
 
-nav.white ul li a:hover {
+#mainNav.white ul li a:hover {
     border-bottom: 2px solid #3c59a9 !important;
     transition: 0.2s !important;
 }
@@ -143,9 +143,9 @@ nav.white ul li a:hover {
 
 
 .logo {
-    position: fixed;
+    position: absolute;
     top: 15px;
-    left: 20px;
+    left: 0px;
     width: 190px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.233);
@@ -186,19 +186,19 @@ img.imgWelcome {
 .welcomeImg img {
     width: 90%;
     border-radius: 10px;
-    margin-left: 10%;
+    margin-left: 0;
 }
 
 .videoNadzorImg img {
     width: 90%;
     border-radius: 10px;
-    margin: 30% 10%;
+    margin: 30% 0;
 }
 
 .parallelogram {
     position: absolute;
     left: -40%;
-    top: -3%;
+    top: -1.5%;
     opacity: 0;
 }
 
@@ -206,7 +206,7 @@ img.imgWelcome {
     position: relative;
     top: 100%;
     left: 0%;
-    padding: 5% 5%;
+    padding: 5% 0% 5% 2%;
     opacity: 0;
 }
 
@@ -214,7 +214,7 @@ img.imgWelcome {
     position: relative;
     top: 0%;
     left: -100%;
-    padding: 5% 5%;
+    padding: 5% 0%;
     opacity: 0;
 }
 
@@ -222,7 +222,7 @@ img.imgWelcome {
     position: relative;
     top: -100%;
     left: 0%;
-    padding: 5% 5%;
+    /* padding: 5% 5%; */
     opacity: 0;
 }
 
@@ -239,31 +239,25 @@ img.imgWelcome {
     font-weight: 700;
 }
 
-.welcomeText {
-    padding: 1% 5% 0;
-}
-
-.para2 {
-    padding: 5% 5% 10%;
-}
-
 .para2 ul li {
     display: block;
     padding: 1%;
 }
 
 .mesImg {
-    padding: 10% 5% 10%;
+    padding: 10% 0% 10%;
+    position: relative;
 }
 
 .mesImg img {
     position: relative;
-    top: 150%;
-    width: 90%;
+    right: -5%;
+    width: 95%;
+    margin: 0;
     border-radius: 10px;
 }
 
-.bgBlue {
+/* .bgBlue {
     width: 100%;
     background-color: #3c59a9;
 }
@@ -273,7 +267,7 @@ div.bgBlue.blue {
     padding: 10% 1%;
     clip-path: polygon(100% 30%, 0% 70%, 100% 100%);
     transition: 0.2s !important;
-}
+} */
 
 /*USLUGE
 *********************************************************************/
@@ -282,10 +276,10 @@ div.bgBlue.blue {
 .uslugeImg img {
     position: relative;
     left: -200%;
-    width: 80%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
-    margin: 25% 0% 25%;
+    margin: 25% 0;
     box-shadow: 3px 3px 9px #3c59a9;
 }
 
@@ -294,8 +288,7 @@ div.bgBlue.blue {
 *************************************************************************/
 .uslugeAccordion {
     background-color: #c9c5cc;
-    margin-top: -15%;
-    padding: 10% 5%;
+    padding: 5% 0;
 }
 
 .uslugeAccordion h2 {
@@ -326,9 +319,9 @@ div.uslugeAccordion.gray {
 }
 
 .accordion {
-    width: 90%;
+    width: 95%;
     position: relative;
-    bottom: -200%;
+    right: -5%;
     padding-top: 25%;
 }
 
@@ -357,11 +350,23 @@ div.uslugeAccordion.gray {
 }
 
 .galleryH {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .galleryImg {
-    padding: 2%;
+    max-width: 30.66666666%;
+    margin: 2% 4% 0 0;
+    outline: 2px solid blue;
+}
+
+.gallery {
+    width: 100%;
+    outline: 2px solid #000;
+}
+
+.galleryImg:nth-child(3),
+.galleryImg:nth-child(6) {
+    margin-right: 0;
 }
 
 .galleryImg img {
