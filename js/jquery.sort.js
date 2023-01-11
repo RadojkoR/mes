@@ -25,7 +25,7 @@ $(window).on("scroll", function () {
     }
 
     if ($(window).scrollTop() > 400) {
-        $(".parallelogram, .kontaktTel ul li a ").animate({
+        $(".parallelogram").animate({
             left: "10%",
             opacity: '0.7'
         }, 1000);
@@ -33,7 +33,7 @@ $(window).on("scroll", function () {
 
     if ($(window).scrollTop() > 450) {
         $(".kontaktTel ul li a ").animate({
-            left: "0%",
+            left: "0",
             opacity: '1'
         }, 1000);
     }
@@ -55,8 +55,7 @@ $(window).on("scroll", function () {
     }
 
     if($(window).scrollTop() > 1100) {
-        $(".beograd h4, .beograd iframe").animate({
-            top: "0%", 
+        $(".beograd h4, .beograd iframe").animate({ 
             left: "0%"
         }, 1000);
     }
@@ -67,7 +66,7 @@ $(window).on("scroll", function () {
         }, 1000);
     }
 
-    if ($(window).scrollTop() > 1800) {
+    if ($(window).scrollTop() > 1700) {
         $(".socialMedia").animate({
             left: "0%"
         }, 1000);
@@ -97,7 +96,7 @@ $(window).on("scroll", function () {
 
     if($(window).scrollTop() > 1500) {
         $(".mesImg img").animate({
-            // top:"0%"
+            top:"0%"
         }, 1000)
     };//END MES IMAGE
 

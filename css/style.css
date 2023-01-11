@@ -226,7 +226,7 @@ img.imgWelcome {
     position: relative;
     top: -100%;
     left: 0%;
-    padding-bottom: 5%;
+    padding: 5% 0;
     opacity: 0;
 }
 
@@ -434,13 +434,14 @@ div.uslugeAccordion.gray {
 .kontaktTel ul li a,  .email p a {
     text-decoration: none;
     color: #3f3f3f;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .kontaktTel ul li a:hover,  .email p a:hover {
     background-color: #6997cc;
     color: #FFF;
-    padding: 2%;
-    border-radius: 25px;
+    transition: all 0.5s ease;
 }
 
 .cacak {
@@ -458,8 +459,8 @@ div.uslugeAccordion.gray {
     -o-position: relative;
     -ms-position: relative;
     position: relative;
-    bottom: -300%;
-    overflow-y: hidden;
+    right: -200%;
+    overflow-x: hidden;
 }
 
 .cacak, .beograd, .socialMedia {
@@ -477,15 +478,13 @@ div.uslugeAccordion.gray {
 .cacak iframe {
     width: 90%;
     border-radius: 10px;
-    box-shadow: 3px 3px 9px #3c59a9;
     margin-right: 10%;
 }
 
 .beograd iframe {
     width: 90%;
     border-radius: 10px;
-    box-shadow: 3px 3px 9px #3c59a9;
-    margin-left: 10%;
+    margin-left: 9%;
 }
 
 .social {
