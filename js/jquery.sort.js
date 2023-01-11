@@ -26,7 +26,7 @@ $(window).on("scroll", function () {
 
     if ($(window).scrollTop() > 400) {
         $(".parallelogram, .kontaktTel ul li a ").animate({
-            left: "0%",
+            left: "10%",
             opacity: '0.7'
         }, 1000);
     }
@@ -95,9 +95,9 @@ $(window).on("scroll", function () {
         }, 1500);
     };// END PARA2
 
-    if($(window).scrollTop() > 800) {
+    if($(window).scrollTop() > 1500) {
         $(".mesImg img").animate({
-            top:"0%"
+            // top:"0%"
         }, 1000)
     };//END MES IMAGE
 
@@ -110,13 +110,15 @@ $(window).on("scroll", function () {
 
     if($(window).scrollTop() > 1900) {
         $(".uslugeImg img").animate({
-            left:"0%"
+            left:"0%",
+            opacity:1
         }, 1000)
     };//END USLUGE img
 
     if($(window).scrollTop() > 2050) {
-        $(".accordion").animate({
-            top: "0%"
+        $(".uslugeList").animate({
+            right: "0%",
+            opacity: 1
         }, 1000)
     };//END ACCORDION
 
