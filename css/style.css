@@ -34,7 +34,6 @@ p {
     width: 85%;
     margin: 0 auto;
     max-width: 1300px;
-    outline: 2px solid red;
     position: relative;
     overflow-x: hidden;
 }
@@ -233,7 +232,7 @@ img.imgWelcome {
 
 .welcome h2, .contactUs h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -305,7 +304,7 @@ div.bgBlue.blue {
 
 .uslugeAccordion h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 800;
     margin: 1% 0;
     position: relative;
@@ -368,12 +367,10 @@ div.uslugeAccordion.gray {
 .galleryImg {
     max-width: 15%;
     margin: 2% 2% 0 0;
-    outline: 2px solid blue;
 }
 
 .gallery {
     width: 100%;
-    outline: 2px solid #000;
 }
 
 .galleryImg:nth-child(6) {
@@ -695,7 +692,7 @@ hr.light100 {
 
     .welcome h2 {
         text-align: center;
-        font-size: 2.6em;
+        font-size: 2.4em;
         font-weight: bolder;
         padding: 7% 0 5%;
     }
@@ -717,7 +714,10 @@ hr.light100 {
         top: -46%;
         left: 0%;
         padding: 10% 5% 5%;
-        /* z-index: -102; */
+    }
+
+    .interfoniPara p {
+        font-size: 1.2em;
     }
 
     .para2 {
@@ -804,8 +804,26 @@ div.uslugeAccordion.gray {
     font-size: 2.5em;
 }
 
+.kontaktTel ul {
+    margin: 0;
+}
+
+.kontaktTel ul li {
+    text-align: center;
+    padding: 3% 0;
+}
+
+.cacak iframe {
+    margin: 0;
+}
+
+.beograd iframe {
+    margin: 0;
+}
+
 .email p {
     font-size: 0.8em;
+    text-align: center;
 }
 
 .social a {
@@ -960,6 +978,38 @@ div.uslugeAccordion.gray {
         clip-path: polygon(0% 0%, 0 100%, 4000% 100%);
         transition: 0.9s !important;
     }
+
+    .interfoniPara {
+        margin: 0;
+    }
+
+    .galleryH {
+        padding: 5% 0;
+    }
+
+    .kontaktTel ul {
+        margin: 0;
+    }
+
+    .kontaktTel ul li {
+        text-align: center;
+        padding: 3% 0;
+    }
+
+    .cacak iframe {
+        margin: 0;
+    }
+
+    .beograd iframe {
+        margin: 0;
+    }
+
+    .email p {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    
 }
 
 /* Medium devices (tablets, less than 992px) */
