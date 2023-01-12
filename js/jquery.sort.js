@@ -138,17 +138,6 @@ $(window).scroll(function () {
 
 });//END BACKGROUND IMG SCROLL
     
-//   $(window).scroll(function() {
-//     if ($(window).scrollTop() > 1500) {
-//         $("div.uslugeAccordion").addClass("gray");
-//     }//END CSS GRAY
-
-
-//     if ($(window).scrollTop() > 1500) {
-//         $("div.bgBlue").addClass("blue");
-//     }//END CSS BLUE
-
-// });//END SCROLL HR
 
 // UPDATE COPYRIGHT YEAR
     
