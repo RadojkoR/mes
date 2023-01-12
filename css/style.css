@@ -172,7 +172,7 @@ nav ul {
 .welcome {
     background-image: url(../images/body_background.webp);
     background-attachment: fixed;
-    background-position: center;
+    background-size: cover;
     padding: 5% 0;
     z-index: -3003;
 }
@@ -393,8 +393,9 @@ div.uslugeAccordion.gray {
 /*CONTACT US
 ******************************************************************************/
 .contactUs {
-    background-image: url(../images/body_background.jpg);
+    background-image: url(../images/body_background.webp);
     background-attachment: fixed;
+    background-size: cover;
     z-index: -3003;
 }
 
