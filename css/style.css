@@ -355,6 +355,78 @@ div.uslugeAccordion.gray {
 
 /*GALLERY
 *************************************************************************************/
+.fullImg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+
+.fullImgInt {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 299;
+}
+
+.fullImg img,
+.fullImgInt img {
+    width: 90%;
+    max-width: 650px;
+}
+
+.fullImg span,
+.fullImgInt span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2.7rem;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.fullImg span:hover {
+    color: red;
+    background-color: #3b5998;
+}
+
+.fullImg i {
+    font-size: 3rem;
+    color: #FFF;
+    position: absolute;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.fullImg i:hover {
+    color: #3c59a9;
+}
+
+.fullImg .fa-chevron-left {
+    left: 5%;
+    cursor: pointer;
+}
+
+.fullImg .fa-chevron-right {
+    right: 5%;
+    cursor: pointer;
+}
+
 
 .videoNadzor {
     padding-bottom: 5%;
@@ -364,27 +436,32 @@ div.uslugeAccordion.gray {
     padding-bottom: 2em;
 }
 
-.galleryImg {
+.galleryImg,
+.galleryImgInt {
     max-width: 15%;
-    margin: 2% 2% 0 0;
+    margin: 2% auto;
 }
 
 .gallery {
     width: 100%;
+    background-color: #3b589888;
+    padding: 0 3%;
+    border-radius: 10px;
 }
 
-.galleryImg:nth-child(6) {
+/* .galleryImg:nth-child(6) {
     margin-right: 0;
-}
+} */
 
-.galleryImg img {
+/* .galleryImg img {
     border: 1px solid #c9c5cc;
     border-radius: 10px;
     box-shadow: 3px 3px 9px #3c59a9;
     padding: 3%;
-}
+} */
 
-.galleryImg img:hover {
+.galleryImg img:hover,
+.galleryImgInt img:hover {
     opacity: 0.5;
     transition: 0.8s ease;
     cursor: pointer;
