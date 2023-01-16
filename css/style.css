@@ -141,7 +141,9 @@ nav ul {
 /*REUSABLE CLASSES
 ***********************************************************/
 
-
+.logoMobile {
+    display: none;
+}
 
 .logo {
     position: absolute;
@@ -696,6 +698,7 @@ hr.light100 {
 
     .logoMobile {
         position: fixed;
+        display: block;
         top: 5px;
         left: 20px;
         width: 120px;
@@ -944,6 +947,7 @@ div.uslugeAccordion.gray {
 
     .logoMobile {
         position: fixed;
+        display: block;
         top: 5px;
         left: 20px;
         width: 120px;
