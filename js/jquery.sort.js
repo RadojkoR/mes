@@ -80,8 +80,7 @@ $(window).on("scroll", function () {
 
     if($(window).scrollTop() > 600) {
         $("p.para1").animate({
-            top: "0%",
-            left: "0%", 
+            right: "0%", 
             color: "#000",
             opacity: "1"
         }, 1000);
@@ -107,7 +106,7 @@ $(window).on("scroll", function () {
         }, 1000)
     };//END USLUGE H2
 
-    if($(window).scrollTop() > 1900) {
+    if($(window).scrollTop() > 1800) {
         $(".uslugeImg img").animate({
             left:"0%",
             opacity:1
@@ -121,9 +120,9 @@ $(window).on("scroll", function () {
         }, 1000)
     };//END ACCORDION
 
-    if($(window).scrollTop() > 2100) {
+    if($(window).scrollTop() > 1850) {
         $(".interfoniPara p").animate({
-            top: "0%"
+            opacity: "1"
         }, 1000)
     };//END INTERFONIPARA
 

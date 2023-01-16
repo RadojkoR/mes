@@ -195,7 +195,7 @@ img.imgWelcome {
 .videoNadzorImg img {
     width: 90%;
     border-radius: 10px;
-    margin: 30% 0;
+    margin: 50% 0;
 }
 
 .parallelogram {
@@ -208,8 +208,7 @@ img.imgWelcome {
 
 .para1 {
     position: relative;
-    top: 100%;
-    left: 0%;
+    right: -100%;
     padding: 5% 0% 5% 2%;
     opacity: 0;
 }
@@ -347,6 +346,7 @@ div.uslugeAccordion.gray {
 
 .interfoniPara p {
     font-size: 1.5em;
+    opacity: 0;
 }
 
 .inerfonImg img {
@@ -694,19 +694,15 @@ hr.light100 {
         display: none;
     }
 
-    .logo {
-        
-        -webkit-position: fixed;
-        -moz-position: fixed;
-        -o-position: fixed;
-        -ms-position: fixed;
+    .logoMobile {
         position: fixed;
-        top: 10px;
+        top: 5px;
         left: 20px;
-        width: 100px;
+        width: 120px;
         height: auto;
         background-color: rgba(255, 255, 255, 0.233);
-        border-radius: 10px;;
+        border-radius: 10px;
+        z-index: 200;
     }
 
     #mainHeader {
@@ -946,14 +942,15 @@ div.uslugeAccordion.gray {
         display: none;
     }
 
-    .logo {
+    .logoMobile {
         position: fixed;
         top: 5px;
         left: 20px;
         width: 120px;
         height: auto;
         background-color: rgba(255, 255, 255, 0.233);
-        border-radius: 10px;;
+        border-radius: 10px;
+        z-index: 200;
     }
 
     #mainHeader {
@@ -1016,6 +1013,10 @@ div.uslugeAccordion.gray {
         width: 80%;
         right: 0;
         margin: 0 auto;
+    }
+
+    .welcomeImg {
+        margin: 10% 0;
     }
 
     .uslugeAccordion h2 {
@@ -1081,6 +1082,10 @@ div.uslugeAccordion.gray {
     }
     p {
         font-size: 1em;
+    }
+
+    .logoMobile {
+        display: none;
     }
 
     .logo {
@@ -1160,6 +1165,18 @@ div.uslugeAccordion.gray {
     .welcome h5 {
         padding: 0;
     }
+
+    .welcomeImg {
+        margin: 10% 0;
+    }
+
+    .parallelogram {
+        height: 110%;
+        position: absolute;
+        left: 0%;
+        top: -5%;
+        opacity: 0;
+    }
 }
 
 
@@ -1205,6 +1222,14 @@ div.uslugeAccordion.gray {
 
     .welcomeImg {
         margin: 10% 0;
+    }
+
+    .parallelogram {
+        height: 110%;
+        position: absolute;
+        left: 0%;
+        top: -5%;
+        opacity: 0;
     }
 
 }
