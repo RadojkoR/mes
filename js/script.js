@@ -12,14 +12,12 @@ app.fullScreenBox = document.querySelector("#fullScreenBox");
 app.fullScreen = document.querySelector("#fullScreen");
 
 app.singleImg = document.querySelectorAll(".galleryImg");
-app.singleImg.forEach(el => el.addEventListener('click', event => {    
-    // console.log(event.target.attributes.src);
+app.singleImg.forEach(el => el.addEventListener('click', event => { 
     app.openFullScreen(event.target.src);
 
 })); 
 
 app.openFullScreen = (pic) => {
-    // console.log(pic);
     app.fullScreenBox.style.display = "flex";
     app.fullScreen.src = pic;
 }
@@ -31,7 +29,6 @@ app.closeButton.addEventListener('click', () => {
 });
 
 app.closeFullScreen = () => {
-    // fullScreenBoxInt.style.display = "none";
     fullScreenBox.style.display = "none";
 }
 
@@ -44,33 +41,26 @@ app.current = 0;
 
 app.startSlide = () => {
 sliderImages[0];
-// console.log(sliderImages[app.current].firstElementChild.src);
-
 };
 
 
 app.slideLeft = () => {
     sliderImages[app.current - 1];
     app.current--;
-    // console.log(app.current);
     app.fullScreen.src = sliderImages[app.current].firstElementChild.src;
 };
 
 app.arrowLeft.addEventListener('click', () => {
-    // console.log(sliderImages.length);
-    // console.log(sliderImages[app.current].firstElementChild.src);
     if(app.current === 0) {
         app.current= sliderImages.length;    
     };
-    app.slideLeft()
-    // console.log(app.fullScreen.src);    
+    app.slideLeft()  
 });
 
 // SHOW NEXT
 app.slideRight = () => {
     sliderImages[app.current + 1];
     app.current++;
-    // console.log(app.current);
     app.fullScreen.src = sliderImages[app.current].firstElementChild.src;
 };
 
@@ -89,19 +79,16 @@ app.closeButtonInt = document.querySelector("#fullScreenBoxInt span");
 
 app.singleImgInt = document.querySelectorAll(".galleryImgInt");
 app.singleImgInt.forEach(elInt => elInt.addEventListener('click', e => {
-    // console.log(e.target.src);
     app.openFullScreenInt(e.target.src);
 }));
 
 app.openFullScreenInt = (picInt) => {
     app.fullScreenBoxInt.style.display = "flex";
-    // console.log(picInt);
     app.fullScreenInt.src = picInt;
 }
 
 // CLOSE BUTTON INTERFONI
 app.closeButtonInt.addEventListener("click", () => {
-    // console.log("work");
     app.closeFullScreenInt();
 });
 
